@@ -1,14 +1,14 @@
 """Turn English into Pig Latin"""
 import sys
 
-vowels = 'aeiou'
+VOWELS = 'aeiou'
 
 #while loop
 while True:
     word = input("type a word and get its Pig Latin translation: ")
 
-    #if word starts with vowal add way to end 
-    if word[0] in vowels:
+    #if word starts with vowal add way to end
+    if word[0] in VOWELS:
         pig_Latin = word + 'way'
     #else add ay
     else:
